@@ -1,7 +1,12 @@
 :root {
-  --cyan: hsl(179, 62%, 43%);
+  --cyan:hsl(179, 62%, 43%);
+  --body-color:#E6EFF6;
   --brightYellow: hsl(71, 73%, 54%);
   --lightgray: hsl(204, 43%, 93%);
   --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--lightgray);
 }
 /*# sourceMappingURL=style.css.map */
