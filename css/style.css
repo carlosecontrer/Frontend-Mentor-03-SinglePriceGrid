@@ -1,12 +1,90 @@
 :root {
-  --cyan:hsl(179, 62%, 43%);
-  --body-color:#E6EFF6;
+  --cyan: hsl(179, 62%, 43%);
+  --body-color: #e6eff6;
   --brightYellow: hsl(71, 73%, 54%);
   --lightgray: hsl(204, 43%, 93%);
   --grayishBlue: hsl(218, 22%, 67%);
+  --white: white;
 }
 
 body {
   background-color: var(--lightgray);
+  font-family: "Karla", sans-serif;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  background-color: var(--brightYellow);
+  display: flex;
+  position: fixed;
+  margin: 0%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  margin: 20px;
+  -webkit-box-shadow: 10px 10px 25px 0px #a8acb5;
+          box-shadow: 10px 10px 25px 0px #a8acb5;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.box {
+  padding: 1.25rem;
+}
+
+.box__title {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.box__text {
+  color: var(--grayishBlue);
+  font-size: .875rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+.box_title--cyan {
+  color: var(--cyan);
+}
+
+.box__subtitle {
+  color: var(--brightYellow);
+  font-weight: bolder;
+}
+
+.box__list {
+  list-style: none;
+  padding: 0;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.box--white {
+  background-color: var(--white);
+}
+
+.box--light-cyan, .box--cyan {
+  background-color: var(--cyan);
+  color: var(--white);
+}
+
+.box--cyan {
+  opacity: 90%;
+}
+
+.box--light-cyan {
+  opacity: 70%;
 }
 /*# sourceMappingURL=style.css.map */
